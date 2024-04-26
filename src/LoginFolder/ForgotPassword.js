@@ -1,6 +1,8 @@
 const ForgotPassword = () => {
   return (
     <>
+    <div>
+
       <div class="container mt-5">
         <div class="row">
           <div
@@ -151,6 +153,7 @@ const ForgotPassword = () => {
           </div>
         </div>
       </div>
+    </div>
     </>
   );
 };

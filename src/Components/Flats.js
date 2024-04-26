@@ -1,7 +1,41 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
+import Slider from "react-slick";
 
-const Filter = () => {
+const Flats = () => {
+  var settings3 = {
+    focusOnSelect: true,
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    speed: 500,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
   const activelink =
     "text-decoration-none custom-bg-green p-2 text-light rounded-2";
   const normalLink = "text-decoration-none px-3";
@@ -13,7 +47,7 @@ const Filter = () => {
       >
         <div class="row align-items-start">
           <div class="col">
-            <div class="card border-0 rounded-4 pb-5 background-17">
+            <div class="card border-0 rounded-4 pb-5 background-20">
               <div class="card-body">
                 <div class="col-sm-9 mx-auto">
                   <nav class="navbar navbar-expand-lg py-2 bg-light rounded-3">
@@ -148,13 +182,204 @@ const Filter = () => {
                 </div>
                 <div className="" style={{ marginTop: "10%" }}>
                   <h5 class="card-title font-size-interior fw-bold text-light text-start mx-5">
-                    Find the <i>Right</i> home <br />
-                    and start packing
+                    Flats
                   </h5>
                   <p class="card-text col-sm-4 mx-5 text-start text-light">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Libero repellat harum a? Unde?
                   </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container-fluid">
+        <div
+          className="container-fluid"
+          style={{ backgroundColor: "rgb(246,247,246)" }}
+        >
+          <div class="container">
+            <div class="row align-items-start">
+              <div class="col">
+                <div class="card bg-transparent border border-0">
+                  <div class="h1 mt-5 fw-bolder font-size-testimonial">
+                    Hot & Trending
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container ">
+            <div class="row align-items-start">
+              <div class="col">
+                <div class="row">
+                  <div class="col-sm-4 mb-3 mb-sm-0">
+                    <div class="card border border-0 bg-transparent">
+                      <div class="card-body ">
+                        <p class="card-text">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Totam error delectus quas voluptate!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="container-fluid"
+          style={{ backgroundColor: "rgb(246,247,246)" }}
+        >
+          <div class="row align-items-start">
+            <div class="col">
+              <div class="card bg-transparent border border-0">
+                <div class="card-body">
+                  <div className="slider-container">
+                    <Slider {...settings3}>
+                      <div className="">
+                        <div
+                          class="card mx-1 border-2 border-white bg-black background-18"
+                          style={{ width: "18rem;" }}
+                        >
+                          <div class="card-body d-flex flex-row justify-content-between">
+                            <h5 class="card-title mt-auto">
+                              <div class="card bg-transparent border border-0">
+                                <div class=" ">
+                                  <h6 class="card-subtitle mb-1 text-light">
+                                    1211 Sq.Ft. Residential Land/plot for Sale
+                                  </h6>
+                                  <h6
+                                    class="card-subtitle text-body-secondary"
+                                    style={{ fontSize: "12px" }}
+                                  >
+                                    <i class="bi bi-geo-alt-fill text-light"></i>
+                                    <span className="mx-1 text-light">
+                                      Gulmohar Colony, Bhopal
+                                    </span>
+                                  </h6>
+                                </div>
+                              </div>
+                            </h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          class="card mx-1 border-2 border-white bg-black background-16"
+                          style={{ width: "18rem;" }}
+                        >
+                          <div class="card-body d-flex flex-row justify-content-between">
+                            <h5 class="card-title mt-auto">
+                              <div class="card bg-transparent border border-0">
+                                <div class=" ">
+                                  <h6 class="card-subtitle mb-1 fw-bold text-light">
+                                    1211 Sq.Ft. Residential Land/plot for Sale
+                                  </h6>
+                                  <h6
+                                    class="card-subtitle text-body-secondary"
+                                    style={{ fontSize: "12px" }}
+                                  >
+                                    <i class="bi bi-geo-alt-fill text-light"></i>
+                                    <span className="mx-1 text-light">
+                                      Gulmohar Colony,Bhopal
+                                    </span>
+                                  </h6>
+                                </div>
+                              </div>
+                            </h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          class="card mx-1 border-2 border-white bg-black background-18"
+                          style={{ width: "18rem;" }}
+                        >
+                          <div class="card-body d-flex flex-row justify-content-between">
+                            <h5 class="card-title mt-auto">
+                              <div class="card bg-transparent border border-0">
+                                <div class=" ">
+                                  <h6 class="card-subtitle mb-1 fw-bold text-light">
+                                    1211 Sq.Ft. Residential Land/plot for Sale
+                                  </h6>
+                                  <h6
+                                    class="card-subtitle text-body-secondary"
+                                    style={{ fontSize: "12px" }}
+                                  >
+                                    <i class="bi bi-geo-alt-fill text-light"></i>
+                                    <span className="mx-1 text-light">
+                                      Gulmohar Colony,Bhopal
+                                    </span>
+                                  </h6>
+                                </div>
+                              </div>
+                            </h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          class="card mx-1 border-2 border-white bg-black background-16"
+                          style={{ width: "18rem;" }}
+                        >
+                          <div class="card-body d-flex flex-row justify-content-between">
+                            <h5 class="card-title mt-auto">
+                              <div class="card bg-transparent border border-0">
+                                <div class=" ">
+                                  <h6 class="card-subtitle mb-1 fw-bold text-light">
+                                    3200 Sq.Ft. Residential Land/Plot for Sale
+                                    in
+                                  </h6>
+                                  <h6
+                                    class="card-subtitle text-body-secondary"
+                                    style={{ fontSize: "12px" }}
+                                  >
+                                    <i class="bi bi-geo-alt-fill text-light"></i>
+                                    <span className="mx-1 text-light">
+                                      Gulmohar Colony,Bhopal
+                                    </span>
+                                  </h6>
+                                </div>
+                              </div>
+                            </h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          class="card mx-1 border-2 border-white bg-black background-18"
+                          style={{ width: "18rem;" }}
+                        >
+                          <div class="card-body d-flex flex-row justify-content-between">
+                            <h5 class="card-title mt-auto">
+                              <div class="card bg-transparent border border-0">
+                                <div class=" ">
+                                  <h6 class="card-subtitle mb-1 fw-bold text-light">
+                                    3200 Sq.Ft. Residential Land/Plot for Sale
+                                    in
+                                  </h6>
+                                  <h6
+                                    class="card-subtitle text-body-secondary"
+                                    style={{ fontSize: "12px" }}
+                                  >
+                                    <i class="bi bi-geo-alt-fill text-light"></i>
+                                    <span className="mx-1 text-light">
+                                      Gulmohar Colony,Bhopal
+                                    </span>
+                                  </h6>
+                                </div>
+                              </div>
+                            </h5>
+                          </div>
+                        </div>
+                      </div>
+                    </Slider>
+                  </div>
                 </div>
               </div>
             </div>
@@ -283,7 +508,7 @@ const Filter = () => {
                     </div>
                   </div>
                 </div>
-                <div class="container">
+                <div class="container mb-5">
                   <div class="row align-items-start">
                     <div class="col-sm-10 mx-auto text-start">
                       {" "}
@@ -291,29 +516,50 @@ const Filter = () => {
                         <div class="col-sm-6 mb-3 mb-sm-0">
                           <div class="card">
                             <img
-                              src="home-room.jpg"
+                              src="land.jpg"
                               class="card-img-top"
                               alt="..."
                               style={{ height: "250px" }}
                             />
                             <div class="card-img-overlay">
-                              <button
-                                type="button"
-                                class="btn btn-light fw-bold rounded-0"
-                              >
-                                $550,000
-                              </button>
+                              <div className="">
+                                <div class="">
+                                  <button
+                                    type="button"
+                                    class="btn btn-light fw-bold rounded-1"
+                                  >
+                                    $550,000 Lac
+                                  </button>
+                                </div>
+                                <div
+                                  class=""
+                                  style={{
+                                    position: "absolute",
+                                    top: "47%",
+                                  }}
+                                >
+                                  <button
+                                    type="button"
+                                    class="btn fw-bold py-2 text-light rounded-1"
+                                    style={{
+                                      backgroundColor: "rgb(70,79,30)",
+                                    }}
+                                  >
+                                    For Sale
+                                  </button>
+                                </div>
+                              </div>
                             </div>
                             <div class="card-body">
                               <h5 class="card-title fw-bold">
-                                Seaside Serenity Villa
+                                1211 Sq.Ft. Residential land/Plot for Sale
                               </h5>
                               <p class="card-text">
                                 <i
                                   class="bi bi-geo-alt-fill"
                                   style={{ color: "rgb(1,96,184)" }}
                                 ></i>
-                                <span>California Hills,CA 90210</span>
+                                <span>Gulmohar Colony</span>
                               </p>
                             </div>
                             <div class=" ">
@@ -321,25 +567,26 @@ const Filter = () => {
                                 <div class="d-flex">
                                   <div class="p-2">
                                     <i
-                                      class="fa-solid fa-bed"
-                                      style={{ color: "rgb(1,96,184)" }}
-                                    ></i>
-                                    <span className="mx-1">4-Bedroom</span>
-                                  </div>
-                                  <div class="p-2">
-                                    <i
-                                      class="fa-solid fa-bath"
-                                      style={{ color: "rgb(1,96,184)" }}
-                                    ></i>{" "}
-                                    <span className="mx-1">3-Bathroom</span>
-                                  </div>
-                                  <div class="p-2">
-                                    <i
                                       class="fa-solid fa-ruler"
                                       style={{ color: "rgb(1,96,184)" }}
                                     ></i>
-                                    <span className="mx-1">2400 Sq.ft</span>
+                                    <span className="mx-1">1211 Sq.ft</span>
                                   </div>
+                                  <div class="p-2">
+                                    <i
+                                      class="fa-sharp fa-solid fa-circle-check"
+                                      style={{ color: "rgb(1,96,184)" }}
+                                    ></i>
+                                    <span className="mx-1">Immediately</span>
+                                  </div>
+                                  <div class="p-2">
+                                    <i
+                                      class="fa-solid fa-certificate"
+                                      style={{ color: "rgb(1,96,184)" }}
+                                    ></i>{" "}
+                                    <span className="mx-1">Resale</span>
+                                  </div>
+
                                   <div
                                     class="ms-auto "
                                     style={{ marginTop: "-8%" }}
@@ -358,104 +605,53 @@ const Filter = () => {
                             </div>
                           </div>
                         </div>
-                        <div class="col-sm-6 ">
+                        <div class="col-sm-6 mb-3">
                           <div class="card">
                             <img
-                              src="home-room.jpg"
+                              src="land1.jpg"
                               class="card-img-top"
                               alt="..."
                               style={{ height: "250px" }}
                             />
                             <div class="card-img-overlay">
-                              <button
-                                type="button"
-                                class="btn btn-light fw-bold rounded-0"
-                              >
-                                $550,000
-                              </button>
-                            </div>
-                            <div class="card-body">
-                              <h5 class="card-title fw-bold">
-                                Seaside Serenity Villa
-                              </h5>
-                              <p class="card-text">
-                                <i
-                                  class="bi bi-geo-alt-fill"
-                                  style={{ color: "rgb(1,96,184)" }}
-                                ></i>
-                                <span>California Hills,CA 90210</span>
-                              </p>
-                            </div>
-                            <div class=" ">
-                              <div class="card-body card-body-1 scale-2">
-                                <div class="d-flex">
-                                  <div class="p-2">
-                                    <i
-                                      class="fa-solid fa-bed"
-                                      style={{ color: "rgb(1,96,184)" }}
-                                    ></i>
-                                    <span className="mx-1">4-Bedroom</span>
-                                  </div>
-                                  <div class="p-2">
-                                    <i
-                                      class="fa-solid fa-bath"
-                                      style={{ color: "rgb(1,96,184)" }}
-                                    ></i>{" "}
-                                    <span className="mx-1">3-Bathroom</span>
-                                  </div>
-                                  <div class="p-2">
-                                    <i
-                                      class="fa-solid fa-ruler"
-                                      style={{ color: "rgb(1,96,184)" }}
-                                    ></i>
-                                    <span className="mx-1">2400 Sq.ft</span>
-                                  </div>
-                                  <div
-                                    class="ms-auto "
-                                    style={{ marginTop: "-8%" }}
+                              <div className="">
+                                <div class="">
+                                  <button
+                                    type="button"
+                                    class="btn btn-light fw-bold rounded-1"
                                   >
-                                    <i
-                                      class="bi bi-arrow-right-circle-fill"
-                                      style={{
-                                        color: "rgb(1,203,48)",
-                                        fontSize: "30px",
-                                        padding: "0.1rem",
-                                      }}
-                                    ></i>
-                                  </div>
+                                    $550,000 Lac
+                                  </button>
+                                </div>
+                                <div
+                                  class=""
+                                  style={{
+                                    position: "absolute",
+                                    top: "47%",
+                                  }}
+                                >
+                                  <button
+                                    type="button"
+                                    class="btn fw-bold py-2 text-light rounded-1"
+                                    style={{
+                                      backgroundColor: "rgb(70,79,30)",
+                                    }}
+                                  >
+                                    For Sale
+                                  </button>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-6 my-3 mb-sm-0">
-                          <div class="card">
-                            <img
-                              src="home-room.jpg"
-                              class="card-img-top"
-                              alt="..."
-                              style={{ height: "250px" }}
-                            />
-                            <div class="card-img-overlay">
-                              <button
-                                type="button"
-                                class="btn btn-light fw-bold rounded-0"
-                              >
-                                $550,000
-                              </button>
-                            </div>
                             <div class="card-body">
                               <h5 class="card-title fw-bold">
-                                Seaside Serenity Villa
+                                3200 Sq.Ft. Residential land/Plot for Sale
                               </h5>
                               <p class="card-text">
                                 <i
                                   class="bi bi-geo-alt-fill"
                                   style={{ color: "rgb(1,96,184)" }}
                                 ></i>
-                                <span>California Hills,CA 90210</span>
+                                <span>Gulmohar Colony</span>
                               </p>
                             </div>
                             <div class=" ">
@@ -463,95 +659,26 @@ const Filter = () => {
                                 <div class="d-flex">
                                   <div class="p-2">
                                     <i
-                                      class="fa-solid fa-bed"
-                                      style={{ color: "rgb(1,96,184)" }}
-                                    ></i>
-                                    <span className="mx-1">4-Bedroom</span>
-                                  </div>
-                                  <div class="p-2">
-                                    <i
-                                      class="fa-solid fa-bath"
-                                      style={{ color: "rgb(1,96,184)" }}
-                                    ></i>{" "}
-                                    <span className="mx-1">3-Bathroom</span>
-                                  </div>
-                                  <div class="p-2">
-                                    <i
                                       class="fa-solid fa-ruler"
                                       style={{ color: "rgb(1,96,184)" }}
                                     ></i>
-                                    <span className="mx-1">2400 Sq.ft</span>
+                                    <span className="mx-1">1211 Sq.ft</span>
                                   </div>
-                                  <div
-                                    class="ms-auto "
-                                    style={{ marginTop: "-8%" }}
-                                  >
-                                    <i
-                                      class="bi bi-arrow-right-circle-fill"
-                                      style={{
-                                        color: "rgb(1,203,48)",
-                                        fontSize: "30px",
-                                        padding: "0.1rem",
-                                      }}
-                                    ></i>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6 my-3">
-                          <div class="card">
-                            <img
-                              src="home-room.jpg"
-                              class="card-img-top"
-                              alt="..."
-                              style={{ height: "250px" }}
-                            />
-                            <div class="card-img-overlay">
-                              <button
-                                type="button"
-                                class="btn btn-light fw-bold rounded-0"
-                              >
-                                $550,000
-                              </button>
-                            </div>
-                            <div class="card-body">
-                              <h5 class="card-title fw-bold">
-                                Seaside Serenity Villa
-                              </h5>
-                              <p class="card-text">
-                                <i
-                                  class="bi bi-geo-alt-fill"
-                                  style={{ color: "rgb(1,96,184)" }}
-                                ></i>
-                                <span>California Hills,CA 90210</span>
-                              </p>
-                            </div>
-                            <div class=" ">
-                              <div class="card-body card-body-1 scale-2">
-                                <div class="d-flex">
                                   <div class="p-2">
                                     <i
-                                      class="fa-solid fa-bed"
+                                      class="fa-sharp fa-solid fa-circle-check"
                                       style={{ color: "rgb(1,96,184)" }}
                                     ></i>
-                                    <span className="mx-1">4-Bedroom</span>
+                                    <span className="mx-1">Immediately</span>
                                   </div>
                                   <div class="p-2">
                                     <i
-                                      class="fa-solid fa-bath"
+                                      class="fa-solid fa-certificate"
                                       style={{ color: "rgb(1,96,184)" }}
                                     ></i>{" "}
-                                    <span className="mx-1">3-Bathroom</span>
+                                    <span className="mx-1">Resale</span>
                                   </div>
-                                  <div class="p-2">
-                                    <i
-                                      class="fa-solid fa-ruler"
-                                      style={{ color: "rgb(1,96,184)" }}
-                                    ></i>
-                                    <span className="mx-1">2400 Sq.ft</span>
-                                  </div>
+
                                   <div
                                     class="ms-auto "
                                     style={{ marginTop: "-8%" }}
@@ -572,32 +699,53 @@ const Filter = () => {
                         </div>
                       </div>
                       <div class="row">
-                        <div class="col-sm-6 my-3 mb-sm-0">
+                        <div class="col-sm-6 mb-3 mb-sm-0">
                           <div class="card">
                             <img
-                              src="home-room.jpg"
+                              src="land.jpg"
                               class="card-img-top"
                               alt="..."
                               style={{ height: "250px" }}
                             />
                             <div class="card-img-overlay">
-                              <button
-                                type="button"
-                                class="btn btn-light fw-bold rounded-0"
-                              >
-                                $550,000
-                              </button>
+                              <div className="">
+                                <div class="">
+                                  <button
+                                    type="button"
+                                    class="btn btn-light fw-bold rounded-1"
+                                  >
+                                    $550,000 Lac
+                                  </button>
+                                </div>
+                                <div
+                                  class=""
+                                  style={{
+                                    position: "absolute",
+                                    top: "47%",
+                                  }}
+                                >
+                                  <button
+                                    type="button"
+                                    class="btn fw-bold py-2 text-light rounded-1"
+                                    style={{
+                                      backgroundColor: "rgb(70,79,30)",
+                                    }}
+                                  >
+                                    For Sale
+                                  </button>
+                                </div>
+                              </div>
                             </div>
                             <div class="card-body">
                               <h5 class="card-title fw-bold">
-                                Seaside Serenity Villa
+                                1211 Sq.Ft. Residential land/Plot for Sale
                               </h5>
                               <p class="card-text">
                                 <i
                                   class="bi bi-geo-alt-fill"
                                   style={{ color: "rgb(1,96,184)" }}
                                 ></i>
-                                <span>California Hills,CA 90210</span>
+                                <span>Gulmohar Colony</span>
                               </p>
                             </div>
                             <div class=" ">
@@ -605,25 +753,26 @@ const Filter = () => {
                                 <div class="d-flex">
                                   <div class="p-2">
                                     <i
-                                      class="fa-solid fa-bed"
-                                      style={{ color: "rgb(1,96,184)" }}
-                                    ></i>
-                                    <span className="mx-1">4-Bedroom</span>
-                                  </div>
-                                  <div class="p-2">
-                                    <i
-                                      class="fa-solid fa-bath"
-                                      style={{ color: "rgb(1,96,184)" }}
-                                    ></i>{" "}
-                                    <span className="mx-1">3-Bathroom</span>
-                                  </div>
-                                  <div class="p-2">
-                                    <i
                                       class="fa-solid fa-ruler"
                                       style={{ color: "rgb(1,96,184)" }}
                                     ></i>
-                                    <span className="mx-1">2400 Sq.ft</span>
+                                    <span className="mx-1">1211 Sq.ft</span>
                                   </div>
+                                  <div class="p-2">
+                                    <i
+                                      class="fa-sharp fa-solid fa-circle-check"
+                                      style={{ color: "rgb(1,96,184)" }}
+                                    ></i>
+                                    <span className="mx-1">Immediately</span>
+                                  </div>
+                                  <div class="p-2">
+                                    <i
+                                      class="fa-solid fa-certificate"
+                                      style={{ color: "rgb(1,96,184)" }}
+                                    ></i>{" "}
+                                    <span className="mx-1">Resale</span>
+                                  </div>
+
                                   <div
                                     class="ms-auto "
                                     style={{ marginTop: "-8%" }}
@@ -642,32 +791,53 @@ const Filter = () => {
                             </div>
                           </div>
                         </div>
-                        <div class="col-sm-6 my-3">
+                        <div class="col-sm-6 mb-3">
                           <div class="card">
                             <img
-                              src="home-room.jpg"
+                              src="land1.jpg"
                               class="card-img-top"
                               alt="..."
                               style={{ height: "250px" }}
                             />
                             <div class="card-img-overlay">
-                              <button
-                                type="button"
-                                class="btn btn-light fw-bold rounded-0"
-                              >
-                                $550,000
-                              </button>
+                              <div className="">
+                                <div class="">
+                                  <button
+                                    type="button"
+                                    class="btn btn-light fw-bold rounded-1"
+                                  >
+                                    $550,000 Lac
+                                  </button>
+                                </div>
+                                <div
+                                  class=""
+                                  style={{
+                                    position: "absolute",
+                                    top: "47%",
+                                  }}
+                                >
+                                  <button
+                                    type="button"
+                                    class="btn fw-bold py-2 text-light rounded-1"
+                                    style={{
+                                      backgroundColor: "rgb(70,79,30)",
+                                    }}
+                                  >
+                                    For Sale
+                                  </button>
+                                </div>
+                              </div>
                             </div>
                             <div class="card-body">
                               <h5 class="card-title fw-bold">
-                                Seaside Serenity Villa
+                                3200 Sq.Ft. Residential land/Plot for Sale
                               </h5>
                               <p class="card-text">
                                 <i
                                   class="bi bi-geo-alt-fill"
                                   style={{ color: "rgb(1,96,184)" }}
                                 ></i>
-                                <span>California Hills,CA 90210</span>
+                                <span>Gulmohar Colony</span>
                               </p>
                             </div>
                             <div class=" ">
@@ -675,25 +845,212 @@ const Filter = () => {
                                 <div class="d-flex">
                                   <div class="p-2">
                                     <i
-                                      class="fa-solid fa-bed"
+                                      class="fa-solid fa-ruler"
                                       style={{ color: "rgb(1,96,184)" }}
                                     ></i>
-                                    <span className="mx-1">4-Bedroom</span>
+                                    <span className="mx-1">1211 Sq.ft</span>
                                   </div>
                                   <div class="p-2">
                                     <i
-                                      class="fa-solid fa-bath"
+                                      class="fa-sharp fa-solid fa-circle-check"
+                                      style={{ color: "rgb(1,96,184)" }}
+                                    ></i>
+                                    <span className="mx-1">Immediately</span>
+                                  </div>
+                                  <div class="p-2">
+                                    <i
+                                      class="fa-solid fa-certificate"
                                       style={{ color: "rgb(1,96,184)" }}
                                     ></i>{" "}
-                                    <span className="mx-1">3-Bathroom</span>
+                                    <span className="mx-1">Resale</span>
                                   </div>
+
+                                  <div
+                                    class="ms-auto "
+                                    style={{ marginTop: "-8%" }}
+                                  >
+                                    <i
+                                      class="bi bi-arrow-right-circle-fill"
+                                      style={{
+                                        color: "rgb(1,203,48)",
+                                        fontSize: "30px",
+                                        padding: "0.1rem",
+                                      }}
+                                    ></i>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                          <div class="card mb-3">
+                            <img
+                              src="land.jpg"
+                              class="card-img-top"
+                              alt="..."
+                              style={{ height: "250px" }}
+                            />
+                            <div class="card-img-overlay">
+                              <div className="">
+                                <div class="">
+                                  <button
+                                    type="button"
+                                    class="btn btn-light fw-bold rounded-1"
+                                  >
+                                    $550,000 Lac
+                                  </button>
+                                </div>
+                                <div
+                                  class=""
+                                  style={{
+                                    position: "absolute",
+                                    top: "47%",
+                                  }}
+                                >
+                                  <button
+                                    type="button"
+                                    class="btn fw-bold py-2 text-light rounded-1"
+                                    style={{
+                                      backgroundColor: "rgb(70,79,30)",
+                                    }}
+                                  >
+                                    For Sale
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title fw-bold">
+                                1211 Sq.Ft. Residential land/Plot for Sale
+                              </h5>
+                              <p class="card-text">
+                                <i
+                                  class="bi bi-geo-alt-fill"
+                                  style={{ color: "rgb(1,96,184)" }}
+                                ></i>
+                                <span>Gulmohar Colony</span>
+                              </p>
+                            </div>
+                            <div class=" ">
+                              <div class="card-body card-body-1 scale-2">
+                                <div class="d-flex">
                                   <div class="p-2">
                                     <i
                                       class="fa-solid fa-ruler"
                                       style={{ color: "rgb(1,96,184)" }}
                                     ></i>
-                                    <span className="mx-1">2400 Sq.ft</span>
+                                    <span className="mx-1">1211 Sq.ft</span>
                                   </div>
+                                  <div class="p-2">
+                                    <i
+                                      class="fa-sharp fa-solid fa-circle-check"
+                                      style={{ color: "rgb(1,96,184)" }}
+                                    ></i>
+                                    <span className="mx-1">Immediately</span>
+                                  </div>
+                                  <div class="p-2">
+                                    <i
+                                      class="fa-solid fa-certificate"
+                                      style={{ color: "rgb(1,96,184)" }}
+                                    ></i>{" "}
+                                    <span className="mx-1">Resale</span>
+                                  </div>
+
+                                  <div
+                                    class="ms-auto "
+                                    style={{ marginTop: "-8%" }}
+                                  >
+                                    <i
+                                      class="bi bi-arrow-right-circle-fill"
+                                      style={{
+                                        color: "rgb(1,203,48)",
+                                        fontSize: "30px",
+                                        padding: "0.1rem",
+                                      }}
+                                    ></i>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                          <div class="card">
+                            <img
+                              src="land1.jpg"
+                              class="card-img-top"
+                              alt="..."
+                              style={{ height: "250px" }}
+                            />
+                            <div class="card-img-overlay">
+                              <div className="">
+                                <div class="">
+                                  <button
+                                    type="button"
+                                    class="btn btn-light fw-bold rounded-1"
+                                  >
+                                    $550,000 Lac
+                                  </button>
+                                </div>
+                                <div
+                                  class=""
+                                  style={{
+                                    position: "absolute",
+                                    top: "47%",
+                                  }}
+                                >
+                                  <button
+                                    type="button"
+                                    class="btn fw-bold py-2 text-light rounded-1"
+                                    style={{
+                                      backgroundColor: "rgb(70,79,30)",
+                                    }}
+                                  >
+                                    For Sale
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title fw-bold">
+                                3200 Sq.Ft. Residential land/Plot for Sale
+                              </h5>
+                              <p class="card-text">
+                                <i
+                                  class="bi bi-geo-alt-fill"
+                                  style={{ color: "rgb(1,96,184)" }}
+                                ></i>
+                                <span>Gulmohar Colony</span>
+                              </p>
+                            </div>
+                            <div class=" ">
+                              <div class="card-body card-body-1 scale-2">
+                                <div class="d-flex">
+                                  <div class="p-2">
+                                    <i
+                                      class="fa-solid fa-ruler"
+                                      style={{ color: "rgb(1,96,184)" }}
+                                    ></i>
+                                    <span className="mx-1">1211 Sq.ft</span>
+                                  </div>
+                                  <div class="p-2">
+                                    <i
+                                      class="fa-sharp fa-solid fa-circle-check"
+                                      style={{ color: "rgb(1,96,184)" }}
+                                    ></i>
+                                    <span className="mx-1">Immediately</span>
+                                  </div>
+                                  <div class="p-2">
+                                    <i
+                                      class="fa-solid fa-certificate"
+                                      style={{ color: "rgb(1,96,184)" }}
+                                    ></i>{" "}
+                                    <span className="mx-1">Resale</span>
+                                  </div>
+
                                   <div
                                     class="ms-auto "
                                     style={{ marginTop: "-8%" }}
@@ -721,6 +1078,7 @@ const Filter = () => {
           </div>
         </div>
       </div>
+
       <div className="container-fluid questrial-regular">
         <div
           class="card rounded-0"
@@ -951,4 +1309,4 @@ const Filter = () => {
   );
 };
 
-export default Filter;
+export default Flats;

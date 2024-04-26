@@ -30,6 +30,14 @@ import Contact from "./Components/Contact";
 import Filter from "./Components/Filter";
 import ProfileLayout from "./Components/Profile/ProfileLayout";
 import Profile from "./Components/Profile/Profile";
+import Plots1 from "./Components/Plots1";
+import Frame39 from "./Components/Frame39";
+import Flats from "./Components/Flats";
+import Frame45 from "./Components/Frame45";
+import Frame46 from "./Components/Frame46";
+import Frame47 from "./Components/Frame47";
+import Frame48 from "./Components/Frame48";
+import Frame38 from "./Components/Frame38";
 
 function App() {
   return (
@@ -61,10 +69,18 @@ function App() {
           <Route path="lawyer" element={<Lawyer />} />
           <Route path="engineer" element={<Engineer />} />
           <Route path="internal1" element={<InternalPage />} />
+          <Route path="frame39" element={<Frame39 />} />
         </Route>
         <Route path="/career" element={<Career />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/filter" element={<Filter />} />
+        <Route path="/plots1" element={<Plots1 />} />
+        <Route path="/flats" element={<Flats />} />
+        <Route path="/frame45" element={<Frame45 />} />
+        <Route path="/frame46" element={<Frame46 />} />
+        <Route path="/frame47" element={<Frame47 />} />
+        <Route path="/frame48" element={<Frame48 />} />
+        <Route path="/frame38" element={<Frame38 />} />
         <Route path="login" element={<Login />} />
         <Route path="forgotpassword" element={<ForgotPassword />} />
         <Route path="verifycode" element={<Verifycode />} />

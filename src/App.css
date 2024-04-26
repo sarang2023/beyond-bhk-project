@@ -23,6 +23,7 @@
   text-decoration: none;
 }
 
+
 .nav-underline .active::after {
   content: "";
   position: absolute;
@@ -313,6 +314,29 @@
 
   height: 600px;
 }
+.background-19 {
+  background-image: url("/public/plot.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+
+  height: 600px;
+}
+.background-20 {
+  background-image: url("/public/flat.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+
+  height: 600px;
+}
+.background-18 {
+  background-image: url("/public/land.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+
 .length-indicator {
   margin-left: 25px;
 }

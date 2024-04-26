@@ -104,33 +104,6 @@ const Home = () => {
       },
     ],
   };
-
-  function SampleNextArrow1(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, position: "absolute", top: "-30px", right: "25px" }}
-        onClick={onClick}
-      />
-    );
-  }
-  function SamplePrevArrow1(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{
-          ...style,
-          position: "absolute",
-          top: "-30px",
-          left: "93%",
-        }}
-        onClick={onClick}
-      />
-    );
-  }
-
   var settings3 = {
     focusOnSelect: true,
     infinite: true,
@@ -164,6 +137,32 @@ const Home = () => {
       },
     ],
   };
+
+  function SampleNextArrow1(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, position: "absolute", top: "-30px", right: "25px" }}
+        onClick={onClick}
+      />
+    );
+  }
+  function SamplePrevArrow1(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{
+          ...style,
+          position: "absolute",
+          top: "-30px",
+          left: "93%",
+        }}
+        onClick={onClick}
+      />
+    );
+  }
 
   return (
     <>
@@ -225,7 +224,9 @@ const Home = () => {
 
                 <div
                   class="col-sm-10 p-xxl-5 g-0"
-                  style={{ backgroundColor: "rgb(234,245,252)" }}
+                  style={{
+                    backgroundColor: "rgb(234,245,252)",
+                  }}
                 >
                   <div class="card rounded-0 bg-transparent border border-0">
                     <div class="container">
@@ -495,39 +496,39 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
+               
               </div>
             </div>
           </div>
         </div>
-        <div className="">
-          <div
-            className="container-fluid"
-            style={{ backgroundColor: "rgb(234,245,252)" }}
-          >
-            <div class="container">
-              <div class="row align-items-start">
-                <div class="col">
-                  <div class="card bg-transparent border border-0">
-                    <div class="h1 mt-5 fw-bolder font-size-testimonial">
-                      Hot & Trending
-                    </div>
+
+        <div
+          className="container-fluid"
+          style={{ backgroundColor: "rgb(234,245,252)" }}
+        >
+          <div class="container">
+            <div class="row align-items-start">
+              <div class="col">
+                <div class="card bg-transparent border border-0">
+                  <div class="h1 mt-5 fw-bolder font-size-testimonial">
+                    Hot & Trending
                   </div>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="container ">
-              <div class="row align-items-start">
-                <div class="col">
-                  <div class="row">
-                    <div class="col-sm-4 mb-3 mb-sm-0">
-                      <div class="card border border-0 bg-transparent">
-                        <div class="card-body ">
-                          <p class="card-text">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit. Totam error delectus quas voluptate!
-                          </p>
-                        </div>
+          <div class="container ">
+            <div class="row align-items-start">
+              <div class="col">
+                <div class="row">
+                  <div class="col-sm-4 mb-3 mb-sm-0">
+                    <div class="card border border-0 bg-transparent">
+                      <div class="card-body ">
+                        <p class="card-text">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Totam error delectus quas voluptate!
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -535,162 +536,163 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </div>
 
-          <div
-            class="container-fluid"
-            style={{ backgroundColor: "rgb(234,245,252)" }}
-          >
-            <div class="row align-items-start">
-              <div class="col">
-                <div class="card bg-transparent border border-0">
-                  <div class="card-body">
-                    <div className="slider-container">
-                      <Slider {...settings3}>
-                        <div className="">
-                          <div
-                            class="card mx-1 border-2 border-white bg-black background-12"
-                            style={{ width: "18rem;" }}
-                          >
-                            <div class="card-body d-flex flex-row justify-content-between">
-                              <h5 class="card-title mt-auto">
-                                <div class="card bg-transparent border border-0">
-                                  <div class=" ">
-                                    <h6 class="card-subtitle mb-1 text-light">
-                                      1211 Sq.Ft. Residential Land/plot for Sale
-                                    </h6>
-                                    <h6
-                                      class="card-subtitle text-body-secondary"
-                                      style={{ fontSize: "12px" }}
-                                    >
-                                      <i class="bi bi-geo-alt-fill text-light"></i>
-                                      <span className="mx-1 text-light">
-                                        Gulmohar Colony, Bhopal
-                                      </span>
-                                    </h6>
-                                  </div>
+        <div
+          class="container-fluid"
+          style={{ backgroundColor: "rgb(234,245,252)" }}
+        >
+          <div class="row align-items-start">
+            <div class="col">
+              <div class="card bg-transparent border border-0">
+                <div class="card-body">
+                  <div className="slider-container">
+                    <Slider {...settings3}>
+                      <div className="">
+                        <div
+                          class="card mx-1 border-2 border-white bg-black background-12"
+                          style={{ width: "18rem;" }}
+                        >
+                          <div class="card-body d-flex flex-row justify-content-between">
+                            <h5 class="card-title mt-auto">
+                              <div class="card bg-transparent border border-0">
+                                <div class=" ">
+                                  <h6 class="card-subtitle mb-1 text-light">
+                                    1211 Sq.Ft. Residential Land/plot for Sale
+                                  </h6>
+                                  <h6
+                                    class="card-subtitle text-body-secondary"
+                                    style={{ fontSize: "12px" }}
+                                  >
+                                    <i class="bi bi-geo-alt-fill text-light"></i>
+                                    <span className="mx-1 text-light">
+                                      Gulmohar Colony, Bhopal
+                                    </span>
+                                  </h6>
                                 </div>
-                              </h5>
-                            </div>
+                              </div>
+                            </h5>
                           </div>
                         </div>
-                        <div>
-                          <div
-                            class="card mx-1 border-2 border-white bg-black background-13"
-                            style={{ width: "18rem;" }}
-                          >
-                            <div class="card-body d-flex flex-row justify-content-between">
-                              <h5 class="card-title mt-auto">
-                                <div class="card bg-transparent border border-0">
-                                  <div class=" ">
-                                    <h6 class="card-subtitle mb-1 fw-bold text-light">
-                                      850 Sq.Ft. 3 BHK Residential Apartment
-                                    </h6>
-                                    <h6
-                                      class="card-subtitle text-body-secondary"
-                                      style={{ fontSize: "12px" }}
-                                    >
-                                      <i class="bi bi-geo-alt-fill text-light"></i>
-                                      <span className="mx-1 text-light">
-                                        Gulmohar Colony,Bhopal
-                                      </span>
-                                    </h6>
-                                  </div>
+                      </div>
+                      <div>
+                        <div
+                          class="card mx-1 border-2 border-white bg-black background-13"
+                          style={{ width: "18rem;" }}
+                        >
+                          <div class="card-body d-flex flex-row justify-content-between">
+                            <h5 class="card-title mt-auto">
+                              <div class="card bg-transparent border border-0">
+                                <div class=" ">
+                                  <h6 class="card-subtitle mb-1 fw-bold text-light">
+                                    850 Sq.Ft. 3 BHK Residential Apartment
+                                  </h6>
+                                  <h6
+                                    class="card-subtitle text-body-secondary"
+                                    style={{ fontSize: "12px" }}
+                                  >
+                                    <i class="bi bi-geo-alt-fill text-light"></i>
+                                    <span className="mx-1 text-light">
+                                      Gulmohar Colony,Bhopal
+                                    </span>
+                                  </h6>
                                 </div>
-                              </h5>
-                            </div>
+                              </div>
+                            </h5>
                           </div>
                         </div>
-                        <div>
-                          <div
-                            class="card mx-1 border-2 border-white bg-black background-14"
-                            style={{ width: "18rem;" }}
-                          >
-                            <div class="card-body d-flex flex-row justify-content-between">
-                              <h5 class="card-title mt-auto">
-                                <div class="card bg-transparent border border-0">
-                                  <div class=" ">
-                                    <h6 class="card-subtitle mb-1 fw-bold text-light">
-                                      1000 Sq.Ft. 2 BHK Residential Duplex for
-                                      Sale
-                                    </h6>
-                                    <h6
-                                      class="card-subtitle text-body-secondary"
-                                      style={{ fontSize: "12px" }}
-                                    >
-                                      <i class="bi bi-geo-alt-fill text-light"></i>
-                                      <span className="mx-1 text-light">
-                                        Gulmohar Colony,Bhopal
-                                      </span>
-                                    </h6>
-                                  </div>
+                      </div>
+                      <div>
+                        <div
+                          class="card mx-1 border-2 border-white bg-black background-14"
+                          style={{ width: "18rem;" }}
+                        >
+                          <div class="card-body d-flex flex-row justify-content-between">
+                            <h5 class="card-title mt-auto">
+                              <div class="card bg-transparent border border-0">
+                                <div class=" ">
+                                  <h6 class="card-subtitle mb-1 fw-bold text-light">
+                                    1000 Sq.Ft. 2 BHK Residential Duplex for
+                                    Sale
+                                  </h6>
+                                  <h6
+                                    class="card-subtitle text-body-secondary"
+                                    style={{ fontSize: "12px" }}
+                                  >
+                                    <i class="bi bi-geo-alt-fill text-light"></i>
+                                    <span className="mx-1 text-light">
+                                      Gulmohar Colony,Bhopal
+                                    </span>
+                                  </h6>
                                 </div>
-                              </h5>
-                            </div>
+                              </div>
+                            </h5>
                           </div>
                         </div>
-                        <div>
-                          <div
-                            class="card mx-1 border-2 border-white bg-black background-15"
-                            style={{ width: "18rem;" }}
-                          >
-                            <div class="card-body d-flex flex-row justify-content-between">
-                              <h5 class="card-title mt-auto">
-                                <div class="card bg-transparent border border-0">
-                                  <div class=" ">
-                                    <h6 class="card-subtitle mb-1 fw-bold text-light">
-                                      2141 Sq.Ft. 4 BHK Residential Apartment
-                                    </h6>
-                                    <h6
-                                      class="card-subtitle text-body-secondary"
-                                      style={{ fontSize: "12px" }}
-                                    >
-                                      <i class="bi bi-geo-alt-fill text-light"></i>
-                                      <span className="mx-1 text-light">
-                                        Gulmohar Colony,Bhopal
-                                      </span>
-                                    </h6>
-                                  </div>
+                      </div>
+                      <div>
+                        <div
+                          class="card mx-1 border-2 border-white bg-black background-15"
+                          style={{ width: "18rem;" }}
+                        >
+                          <div class="card-body d-flex flex-row justify-content-between">
+                            <h5 class="card-title mt-auto">
+                              <div class="card bg-transparent border border-0">
+                                <div class=" ">
+                                  <h6 class="card-subtitle mb-1 fw-bold text-light">
+                                    2141 Sq.Ft. 4 BHK Residential Apartment
+                                  </h6>
+                                  <h6
+                                    class="card-subtitle text-body-secondary"
+                                    style={{ fontSize: "12px" }}
+                                  >
+                                    <i class="bi bi-geo-alt-fill text-light"></i>
+                                    <span className="mx-1 text-light">
+                                      Gulmohar Colony,Bhopal
+                                    </span>
+                                  </h6>
                                 </div>
-                              </h5>
-                            </div>
+                              </div>
+                            </h5>
                           </div>
                         </div>
-                        <div>
-                          <div
-                            class="card mx-1 border-2 border-white bg-black background-16"
-                            style={{ width: "18rem;" }}
-                          >
-                            <div class="card-body d-flex flex-row justify-content-between">
-                              <h5 class="card-title mt-auto">
-                                <div class="card bg-transparent border border-0">
-                                  <div class=" ">
-                                    <h6 class="card-subtitle mb-1 fw-bold text-light">
-                                      3200 Sq.Ft. Residential Land/Plot for Sale
-                                      in
-                                    </h6>
-                                    <h6
-                                      class="card-subtitle text-body-secondary"
-                                      style={{ fontSize: "12px" }}
-                                    >
-                                      <i class="bi bi-geo-alt-fill text-light"></i>
-                                      <span className="mx-1 text-light">
-                                        Gulmohar Colony,Bhopal
-                                      </span>
-                                    </h6>
-                                  </div>
+                      </div>
+                      <div>
+                        <div
+                          class="card mx-1 border-2 border-white bg-black background-16"
+                          style={{ width: "18rem;" }}
+                        >
+                          <div class="card-body d-flex flex-row justify-content-between">
+                            <h5 class="card-title mt-auto">
+                              <div class="card bg-transparent border border-0">
+                                <div class=" ">
+                                  <h6 class="card-subtitle mb-1 fw-bold text-light">
+                                    3200 Sq.Ft. Residential Land/Plot for Sale
+                                    in
+                                  </h6>
+                                  <h6
+                                    class="card-subtitle text-body-secondary"
+                                    style={{ fontSize: "12px" }}
+                                  >
+                                    <i class="bi bi-geo-alt-fill text-light"></i>
+                                    <span className="mx-1 text-light">
+                                      Gulmohar Colony,Bhopal
+                                    </span>
+                                  </h6>
                                 </div>
-                              </h5>
-                            </div>
+                              </div>
+                            </h5>
                           </div>
                         </div>
-                      </Slider>
-                    </div>
+                      </div>
+                    </Slider>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
         <div className="">
           <div
             className="container-fluid"

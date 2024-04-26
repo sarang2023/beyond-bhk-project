@@ -1,6 +1,8 @@
 const Verifycode = () => {
   return (
     <>
+    <div>
+
       <div class="container mt-5">
         <div class="row">
           <div
@@ -95,6 +97,7 @@ const Verifycode = () => {
           </div>
         </div>
       </div>
+    </div>
     </>
   );
 };

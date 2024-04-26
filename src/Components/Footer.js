@@ -35,7 +35,7 @@ const Footer = () => {
                           <ul class=" list-group-flush">
                             <li class="list-group-item border-0">
                               <a
-                                href=""
+                                href="plots1"
                                 className="text-decoration-none text-light"
                               >
                                 Home
@@ -44,7 +44,7 @@ const Footer = () => {
                             <li class="list-group-item border-0">
                               {" "}
                               <a
-                                href=""
+                                href="flats"
                                 className="text-decoration-none text-light"
                               >
                                 About
@@ -80,7 +80,7 @@ const Footer = () => {
                             <li class="list-group-item border-0">
                               {" "}
                               <a
-                                href=""
+                                href="frame39"
                                 className="text-decoration-none text-light"
                               >
                                 Contact Us
@@ -95,12 +95,40 @@ const Footer = () => {
                         <div class="card-body">
                           <h5 class="mx-4 pb-2">Service</h5>
                           <ul class=" list-group-flush">
-                            <li class="list-group-item border-0">Office</li>
                             <li class="list-group-item border-0">
-                              Residential Apartment
+                              <a
+                                href="frame45"
+                                className="text-decoration-none text-light"
+                              >
+                                Office
+                              </a>{" "}
                             </li>
-                            <li class="list-group-item border-0">Land</li>
-                            <li class="list-group-item border-0">Commercial</li>
+                            <li class="list-group-item border-0">
+                              {" "}
+                              <a
+                                href="frame46"
+                                className="text-decoration-none text-light"
+                              >
+                                Residential Apartment
+                              </a>
+                            </li>
+                            <li class="list-group-item border-0">
+                              {" "}
+                              <a
+                                href="frame47"
+                                className="text-decoration-none text-light"
+                              >
+                                Land
+                              </a>
+                            </li>
+                            <li class="list-group-item border-0">
+                              <a
+                                href="frame48"
+                                className="text-decoration-none text-light"
+                              >
+                                Commercial
+                              </a>
+                            </li>
                           </ul>
                         </div>
                       </div>
@@ -126,7 +154,15 @@ const Footer = () => {
                               <i class="bi bi-youtube"></i>
                             </div>
                           </div>
-                          <h5 class="mx-4 py-1">About</h5>
+                          <h5 class="mx-4 py-1">
+                            {" "}
+                            <a
+                              href="frame38"
+                              className="text-decoration-none text-light"
+                            >
+                              About
+                            </a>
+                          </h5>
                           <p class="card-text mx-4">
                             Some quick example text to build on the card title
                             and make up the bulk of the card's content.
